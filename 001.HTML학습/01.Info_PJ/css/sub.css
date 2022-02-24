@@ -1,2 +1,11 @@
 @charset "utf-8";
 /* 서브 페이지 css - sub.css */
+
+/* 공통 클래스 */
+/*
+    import로 파일 합치기
+    외부 css파일에서 다른 외부 css를 import방식으로 불러옴
+    - html파일에서 link요소로 호출할 경우 http request(웹요청)이 많아져서 페이지 랜더링 속도가 더뎌진다
+    - 따라서 이 방식을 쓰면 한번에 여러 css를 불러올 수 있어서 속도에 유리하다
+*/
+@import url('./style.css');
