@@ -47,15 +47,21 @@ header {
     /* 블록박스 중앙정렬!
                     margin: 0 auto;
                     마영오! 씨
+
                     margin: 값; (4방향)
                     margin: 값 값; (위아래 양쪽)
                     margin: 값 값 값; (위 양쪽 아래)
                     margin: 값 값 값 값; (위 오른 아래 왼) -> 시계방향
+
                     -> padding도 위와 같음!
+
                     개별설정은
                     margin-top, margin-bottom
                     margin-left, margin-right
+
                     -> padding도 위와 같음!
+
+
                 */
     /* 
                     width나 height크기를 안주면
@@ -132,8 +138,7 @@ nav.gnb img {
         값은 수치로 줄 수 있고
         top, middle, bottom, baseline 등 있음
     */
-    border: none;
-    /* 보더없앰 */
+    border: none;/* 보더없앰 */
     /* 이미지에 링크가 걸린경우 파란색 테두리가
     서버에 올린후 보일 수 있다! */
 }
