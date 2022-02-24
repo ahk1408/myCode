@@ -125,11 +125,10 @@ header {
 
 /* 메뉴 a에 마우스 오버시 */
 /* 선택자:hover -> 마우스 오버시 가상클래스 */
-.gnb>a:hover {
+.gnb > a:hover {
     text-decoration: overline;
     /* 밋tdo */
 }
-
 
 /* 로고이미지 */
 /* nav태그인데 클래스가 gnb인 요소 아래 자손중 img요소 선택 */
