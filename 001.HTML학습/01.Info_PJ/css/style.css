@@ -44,8 +44,7 @@ header {
     padding: 10px;
     margin: 20px auto;
 
-    /* 
-        블록박스 중앙정렬!
+    /* 블록박스 중앙정렬!
         margin: 0 auto;
         마영오! 씨
 
@@ -80,12 +79,10 @@ header {
     /* 보더, 패딩 사이즈 내부에 포함시키기 */
     box-sizing: border-box;
     /* 젠 bxb */
-    /* 
-        원래는 보더와 패딩만큼 커지는게 기본
+    /* 원래는 보더와 패딩만큼 커지는게 기본
         속성이지만 이것을 내부에 포함시키는
         속성은 위와 같다! 
-        기본값은 content-box
-    */
+        기본값은 content-box */
 }
 
 /* 띄어쓰기는 자손선택자! */
@@ -125,10 +122,11 @@ header {
 
 /* 메뉴 a에 마우스 오버시 */
 /* 선택자:hover -> 마우스 오버시 가상클래스 */
-.gnb > a:hover {
+.gnb>a:hover {
     text-decoration: overline;
     /* 밋tdo */
 }
+
 
 /* 로고이미지 */
 /* nav태그인데 클래스가 gnb인 요소 아래 자손중 img요소 선택 */
@@ -140,8 +138,7 @@ nav.gnb img {
         값은 수치로 줄 수 있고
         top, middle, bottom, baseline 등 있음
     */
-    border: none;
-    /* 보더없앰 */
+    border: none;/* 보더없앰 */
     /* 이미지에 링크가 걸린경우 파란색 테두리가
     서버에 올린후 보일 수 있다! */
 }
@@ -160,11 +157,9 @@ footer#info address {
                 - 기본크기는 16px
                 12pt=16px (이육사) */
     line-height: 1.6;
-    /* 
-        줄간격
-        - 단위없이 사용하면 글자크기배수
-        - px, em 등 여러가지 단위사용가능
-    */
+    /* 줄간격
+    - 단위없이 사용하면 글자크기배수
+    - px, em 등 여러가지 단위사용가능 */
 }
 
 /* 영문이름만 이탤릭체 */

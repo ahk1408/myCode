@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>네이버 요약뉴스</title>
         <meta charset="utf-8">
@@ -44,7 +43,7 @@
 
             /* 공통클래스 */
             /* box center의 의미로 이름지음! 자기맘! */
-            .bxc {
+            .bxc{
                 width: 727px;
                 /* 가로크기 */
                 margin: 0 auto;
@@ -56,25 +55,23 @@
                 text-align: center;
                 /* 내부컨텐츠 인라인 중앙 */
             }
-
             /* 다중클래스 적용연습 */
 
             /* 글자색,글자그림자 클래스 */
-            .fc {
+            .fc{ 
                 color: skyblue;
                 text-shadow: 1px 1px 1px #000;
             }
-
             /* 밑줄 */
-            .fu {
+            .fu{
                 text-decoration: underline;
                 /* 밑줄 */
                 text-decoration-style: dotted;
                 /* 데코레이션 선 스타일 - 점선 */
             }
-
+            
             /* 1. 상단영역 */
-            header {
+            header{
                 /* 블록박스 셋팅 */
                 width: 727px;
                 /* height: 200px; */
@@ -115,8 +112,7 @@
                 background-color: #b4eafa;
 
                 /* 보더, 패딩 사이즈 내부에 포함시키기 */
-                box-sizing: border-box;
-                /* 젠 bxb */
+                box-sizing: border-box;/* 젠 bxb */
                 /* 원래는 보더와 패딩만큼 커지는게 기본
                 속성이지만 이것을 내부에 포함시키는
                 속성은 위와 같다! 
@@ -125,7 +121,7 @@
 
             /* 띄어쓰기는 자손선택자! */
             /* 아이디가 top인 요소의 자손 중 h1선택 */
-            #top h1 {
+            #top h1{
                 /* 글자색 */
                 color: hotpink;
                 /* 글자그림자 */
@@ -133,11 +129,10 @@
             }
 
             /* 메뉴 */
-            .gnb a {
+            .gnb a{
                 color: #ff01f2;
                 /* 밑줄없앰 */
-                text-decoration: none;
-                /* 젠tdn */
+                text-decoration: none;/* 젠tdn */
                 /* 
                     text-decoration 속성
                     - underline 밑줄
@@ -146,8 +141,7 @@
                     - none 없음
                 */
                 /* 글자 두껍게 */
-                font-weight: bold;
-                /* 젠fwb */
+                font-weight: bold;/* 젠fwb */
                 /* 
                     font-weight 속성
                     - bold 두껍게
@@ -160,17 +154,16 @@
 
             /* 메뉴 a에 마우스 오버시 */
             /* 선택자:hover -> 마우스 오버시 가상클래스 */
-            .gnb > a:hover {
-                text-decoration: overline;
-                /* 밋tdo */
+            .gnb>a:hover{
+                text-decoration: overline;/* 밋tdo */
             }
+
 
             /* 로고이미지 */
             /* nav태그인데 클래스가 gnb인 요소 아래 자손중 img요소 선택 */
-            nav.gnb img {
+            nav.gnb img{
                 /* 인라인요소가 세로정렬 */
-                vertical-align: -5px;
-                /* 젠va */
+                vertical-align: -5px;/* 젠va */
                 /* 
                     값은 수치로 줄 수 있고
                     top, middle, bottom, baseline 등 있음
@@ -197,13 +190,14 @@
             }
 
             /* 영문이름만 이탤릭체 */
-            #info span {
+            #info span{
                 font-style: italic;
             }
+
+
         </style>
 
     </head>
-
     <body>
         <!-- 1. 상단영역 -->
         <header id="top">
@@ -213,16 +207,11 @@
             <nav class="gnb">
                 <a href="index.html" title="메인페이지 가기">
                     <img src="images/logo.png" alt="네이버로고" style="width: 20px;">
-                </a>
-                |
-                <a href="sub1.html">정치</a>
-                |
-                <a href="sub2.html">경제</a>
-                |
-                <a href="sub3.html">사회</a>
-                |
-                <a href="sub4.html">IT/과학</a>
-                |
+                </a> | 
+                <a href="sub1.html">정치</a> | 
+                <a href="sub2.html">경제</a> | 
+                <a href="sub3.html">사회</a> | 
+                <a href="sub4.html">IT/과학</a> | 
                 <a href="sub5.html">TV/연예</a>
 
             </nav>
@@ -230,37 +219,72 @@
         <!-- 2. 메인영역 -->
         <main id="cont" class="bxc">
             <!-- 메인이미지 -->
-            <img
-                src="images/main.jpg"
-                alt="뉴스메인이미지"
-                title="요약뉴스 보고싶다!"
-                style="width: 600px;">
+            <img src="images/main.jpg" alt="뉴스메인이미지" title="요약뉴스 보고싶다!" style="width: 600px;">
         </main>
         <!-- 3. 하단영역 -->
         <footer id="info" class="bxc">
             <!-- 회사주소 및 정보 -->
             <address>
-                서울시 강남구 역삼동 119 대호B 8F
-                <br>
-                대표:
-                <span class="fc fu">Tom Brace Parker</span>
-                <br>
+                서울시 강남구 역삼동 119 대호B 8F <br>
+                대표: <span class="fc fu">Tom Brace Parker</span> <br>
                 전화: 010-2222-3333
             </address>
         </footer>
 
-        <!-- [ html 요소들 ] 1. div : 컨텐츠 구분박스 (divide,division) -> 옆에 아무것도 못옴->블록박스 2.
-        div의 형제들 소개!! -> 어떤 부분인지 알 수 있도록 태그에 의미가 있다->>>> 시멘틱태그 (1) header - 상단영역 (2)
-        footer - 하단영역 (3) main - 메인영역(한페이지에 한번만!) (4) nav - 네비게이션 메뉴 (5) aside - 부수적인 내용
-        3. img요소 : 이미지를 불러오는 요소 - src 속성 - 이미지경로셋팅 (source 줄임말) - alt 속성 - 이미지설명 -> alt는
-        필수속성으로 웹접근성을 위한속성 (웹접근성은 평등의 원칙으로 누구나 이미지의 경우 이미지 설명을 들어볼 수 있게함!- 스크린리더기에서 이것을
-        읽어줌~!) 4. address 요소 : 주소나 대표자,전화번호 등을 담는 요소 -> 태그명이 "주소"라는 뜻이 있으므로 시멘틱!하다! (의미가
-        있다!) 5. span 요소 : 인라인요소 범위지정 -> span은 '범위'라는 의미의 단어
-        _______________________________ [ 요소 공통 속성 - 어느요소나 쓸 수 있음! ] 1. style 속성 - css
-        셋팅을 해주는 인라인속성 -> 값은 아래와 같이 셋팅함 style="속성명:값;속성명:값;" _________________________
-        :콜론, ;세미콜론 잘 구분하자! 2. title 속성 - 툴팁을 띄워주는 속성 _______________________________ [
-        html 요소 이름 ] 1. id명: 요소를 구분해주는 이름(유일함!) 2. class명: 요소를 공통적으로 구분하는 이름 -> 클래스는 한
-        요소에 여러개 적용가능함! (띄어쓰기로 구분함!) 예) <h1 id="my" class="rbb coo ytt">하하</h1> -->
-    </body>
+        <!-- 
+            [ html 요소들 ]
 
+            1. div : 컨텐츠 구분박스
+             (divide,division)
+             -> 옆에 아무것도 못옴->블록박스
+
+            2. div의 형제들 소개!!
+            -> 어떤 부분인지 알 수 있도록
+            태그에 의미가 있다->>>> 시멘틱태그
+            (1) header - 상단영역
+            (2) footer - 하단영역
+            (3) main - 메인영역(한페이지에 한번만!)
+            (4) nav - 네비게이션 메뉴
+            (5) aside - 부수적인 내용
+
+            3. img요소 : 이미지를 불러오는 요소
+            - src 속성 - 이미지경로셋팅
+            (source 줄임말)
+            - alt 속성 - 이미지설명
+            -> alt는 필수속성으로 웹접근성을 위한속성
+            (웹접근성은 평등의 원칙으로 누구나 이미지의
+             경우 이미지 설명을 들어볼 수 있게함!-
+              스크린리더기에서 이것을 읽어줌~!)
+
+            4. address 요소 : 주소나 대표자,전화번호 등을 담는 요소
+            -> 태그명이 "주소"라는 뜻이 있으므로
+             시멘틱!하다! (의미가 있다!)
+
+            5. span 요소 : 인라인요소 범위지정
+            -> span은 '범위'라는 의미의 단어
+            _______________________________
+
+            [ 요소 공통 속성 - 어느요소나 쓸 수 있음! ]
+
+            1. style 속성 - css 셋팅을 해주는 인라인속성
+                -> 값은 아래와 같이 셋팅함
+                style="속성명:값;속성명:값;"
+                _________________________
+                :콜론, ;세미콜론 잘 구분하자!
+
+
+            2. title 속성 - 툴팁을 띄워주는 속성
+
+            _______________________________
+
+            [ html 요소 이름 ]
+            1. id명: 요소를 구분해주는 이름(유일함!) 
+            2. class명: 요소를 공통적으로 구분하는 이름
+            -> 클래스는 한 요소에 여러개 적용가능함!
+            (띄어쓰기로 구분함!)
+            예) 
+            <h1 id="my" class="rbb coo ytt">하하</h1>
+
+         -->
+    </body>
 </html>
